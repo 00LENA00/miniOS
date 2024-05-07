@@ -8,7 +8,7 @@ LDFLAGS=-lreadline
 TARGET=minios
 
 # Source, Object files
-SRCS=kernel/kernel.c kernel/system.c kernel/20212973/fork_call.c kernel/20212973/ipc_pipes.c kernel/20212973/pi_mc.c
+SRCS=kernel/kernel.c kernel/system.c kernel/20212973/fork_call.c kernel/20212973/ipc_pipes.c kernel/20212973/pi_mc.c kernel/20212973/RR.c
 OBJS=$(SRCS:.c=.o) 
 
 # Include directory
@@ -25,4 +25,4 @@ $(TARGET): $(OBJS)
 
 # Clean up:
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(OBJS) $(TARGET)S

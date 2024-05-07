@@ -9,6 +9,8 @@ void minisystem();
 void print_minios(char* str);
 int fork_call();
 int ipc_pipes();
+int pi_mc();
+int RR();
 
 int main() {
     print_minios("[MiniOS SSU] Hello, World!");
@@ -37,6 +39,9 @@ int main() {
 	}
 	else if (strcmp(input, "pi") == 0){
 		pi_mc();
+	}
+	else if (strcmp(input, "RR") == 0){
+		RR();
 	}
         else system(input);
     }
